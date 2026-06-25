@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on004752-blue)](https://doi.org/10.82901/nemar.on004752)
+
 ### Dataset of intracranial EEG, scalp EEG and beamforming sources from human epilepsy patients performing a verbal working memory task
 
 #### Description
