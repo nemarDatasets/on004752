@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Dataset of intracranial EEG, scalp EEG and beamforming sources from epilepsy patients performing a verbal working memory task",
-  "description": "This dataset comprises simultaneous intracranial EEG, scalp EEG, and beamforming-reconstructed source data from 15 epilepsy patients performing a verbal working memory task. Subjects completed a modified Sternberg task with temporally separated encoding, maintenance, and recall phases. The dataset includes electrode coordinates, anatomical labels, and reconstructed virtual sensor data from key cognitive regions, enabling investigation of neural mechanisms underlying working memory through multimodal electrophysiological recordings.",
-  "methods_description": "Electrophysiological recordings were obtained from epilepsy patients undergoing intracranial monitoring. Scalp EEG was recorded using the 10-20 system simultaneously with intracranial EEG from depth electrodes. Subjects performed a modified Sternberg working memory task with ~50 trials per session. LCMV beamforming was applied to EEG data to reconstruct virtual sensor activity in specific brain regions including dorsolateral prefrontal cortex, orbitofrontal cortex, posterior parietal cortex, auditory cortex, and primary visual cortex.",
+  "description": "This dataset comprises simultaneous scalp EEG and intracranial EEG (iEEG) recordings from fifteen epilepsy patients undergoing intracranial monitoring while performing a modified Sternberg verbal working memory task. Recordings include depth electrode iEEG, 10-20 scalp EEG, electrode localization (MNI coordinates and anatomical labels), and derived LCMV beamforming virtual sensor data from multiple brain regions (temporal superior lobe, lateral prefrontal cortex, occipital cortex, posterior parietal cortex, and Broca's area). Behavioral data on trial set size, match/mismatch condition, accuracy, and response time are also provided, enabling analyses of memory encoding, maintenance, and recall processes, connectivity, and neural replay.",
+  "methods_description": "Fifteen epilepsy patients undergoing intracranial monitoring performed a modified Sternberg verbal working memory task with temporally separated encoding, maintenance, and recall phases. Simultaneous scalp EEG (10-20 system) and intracranial depth electrode EEG were recorded across multiple sessions (~50 trials each). LCMV beamforming was applied to reconstruct virtual sensor data at specific cortical regions. Data were converted to BIDS format using the bids-starter-kit and custom MATLAB scripts.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -33,16 +33,9 @@
   },
   "keywords": [
     {
-      "term": "intracranial EEG"
-    },
-    {
-      "term": "scalp EEG"
-    },
-    {
-      "term": "working memory"
-    },
-    {
-      "term": "beamforming"
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
       "term": "Epilepsy",
@@ -50,25 +43,31 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
     },
     {
-      "term": "source reconstruction"
+      "term": "Memory, Short-Term",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D008570"
     },
     {
-      "term": "cognitive neuroscience"
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "beamforming"
+    },
+    {
+      "term": "verbal working memory"
+    },
+    {
+      "term": "Sternberg task"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "10.7554/eLife.78677",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsSupplementTo"
     },
     {
       "identifier": "https://github.com/nemarDatasets/on004752",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004752",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     },
@@ -86,6 +85,11 @@
       "identifier": "10.18112/openneuro.ds004752.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004752",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -94,10 +98,11 @@
     },
     {
       "funder_name": "Swiss National Science Foundation",
-      "award_number": "204651"
+      "award_number": "SNSF 204651"
     },
     {
-      "funder_name": "Alexander S Onassis Foundation"
+      "funder_name": "Alexander S Onassis Foundation",
+      "award_title": "PhD Scholarship"
     }
   ],
   "resource_type_general": "Dataset",
