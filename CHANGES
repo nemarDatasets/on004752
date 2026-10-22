@@ -1,3 +1,6 @@
+1.0.2 2026-10-22
+  - 2026-10-19 electrode locations: add coordsystem.json (Other, MNI template unstated, mm) next to 68 electrodes.tsv (68 files). README: section 'Electrode locations (19 Oct 2026)'.
+
 1.0.1 2023-09-20
   - uploaded LCMV beamforming
 1.0.0 2023-09-13

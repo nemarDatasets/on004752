@@ -1,0 +1,5 @@
+{
+  "iEEGCoordinateSystem": "Other",
+  "iEEGCoordinateUnits": "mm",
+  "iEEGCoordinateSystemDescription": "MNI coordinates (template variant not stated by the depositor; every *_electrodes.json: 'the MNI coordinate of the electrode')."
+}

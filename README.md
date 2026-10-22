@@ -28,3 +28,9 @@ bids-starter-kid and custom Matlab scripts were used to convert the dataset into
 [2] Boran E, Fedele T, Klaver P, Hilfiker P, Stieglitz L, Grunwald T, et al. Persistent hippocampal neural firing and hippocampal-cortical coupling predict verbal working memory load. Science Advances 2019;5(3):eaav3687. 10.1126/sciadv.aav3687
 
 [3] Boran E, Fedele T, Steiner A, Hilfiker P, Stieglitz L, Grunwald T, et al. Dataset of human medial temporal lobe neurons, scalp and intracranial EEG during a verbal working memory task. Scientific Data 2020;7(1):30. 10.1038/s41597-020-0364-3
+
+## Electrode locations (19 Oct 2026)
+
+Add coordsystem.json (Other, MNI template unstated, mm) next to 68 electrodes.tsv. Evidence: Every *_electrodes.json says "the MNI coordinate of the electrode"; all MNI templates are in millimetres. The template variant is not stated, so the system is Other with that description (a question for the depositor). Before, readers generated Other / n/a and MNE read the positions as cm (10x too large).
+
+Source and limitation: the frame and units come from the deposit's own `*_electrodes.json`, which describe x/y/z as MNI coordinates; MNI templates are millimetre spaces. The MNI template variant is not stated, so each coordsystem.json declares `Other` and says so in its description. No coordinate value changed. This dataset mirrors OpenNeuro; the same change belongs upstream.
